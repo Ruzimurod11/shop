@@ -1,0 +1,65 @@
+/* ================== reset css =================== */
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+
+/* ================== /reset css =================== */
+
+body {
+   font-family: "Poppins";
+}
+[class*="__container"] {
+   max-width: 1500px;
+   margin: 0px auto;
+   padding: 0 15px;
+}
+@media (max-width: 1500px) {
+   [class*="__container"] {
+      max-width: 1280px;
+   }
+}
+@media (max-width: 1280px) {
+   [class*="__container"] {
+      max-width: 1024px;
+   }
+}
+@media (max-width: 1024px) {
+   [class*="__container"] {
+      max-width: 800px;
+   }
+}
+@media (max-width: 800px) {
+   [class*="__container"] {
+      max-width: none;
+   }
+}
